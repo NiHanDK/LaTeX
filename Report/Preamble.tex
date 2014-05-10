@@ -1,0 +1,12 @@
+%Dokumentklassen sørger for at sætte et standard layout op, med hensyn til marginer, fontstørrelser, ekstra makroer og lignende. Det er det man måske ville kalde en basisskabelon
+\documentclass[a4paper]{article}
+
+%Aktivere danske og enkelsek orddelingsmønstre
+\usepackage[english, danish]{babel}
+
+%Den første pakke i oversigten sørger for, at vi må skrive æ, ø og å (og andre specialtegn) direkte i kildekoden uden at skulle anvende specialkonstruktioner
+%latin1 = ISO-8859-1
+\usepackage[latin1]{inputenc}
+
+%Hjælper med orddeling ved æ, ø og å.
+\usepackage[T1]{fontenc}
