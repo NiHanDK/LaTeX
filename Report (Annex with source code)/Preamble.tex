@@ -10,3 +10,41 @@
 
 %Hjælper med orddeling ved æ, ø og å.
 \usepackage[T1]{fontenc}
+
+\usepackage[top=3cm,bottom=3cm,left=3cm,right=3cm]{geometry}
+
+%Lav indholdsfortegnelse clickable og fjern border
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+%Til listing af programmerings kode
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+
+\lstdefinestyle{defaultLayout} {
+	basicstyle=\footnotesize,  				% The text size of the fonts that are used for the code
+	numbers=left,                   		% Location of the line-numbers
+	numberstyle=\footnotesize,  			% Style used for the line-numbers
+	numberstyle=\color{gray},
+	stepnumber=1,                   		% Step betweek line-numbers
+	numbersep=6pt,                  		% Distance between code and linenumbers
+	backgroundcolor=\color{white},      	% Background color. this will need the package usepackage{color}
+	showspaces=false,               		% Real spaces instead of an _ looking thing
+	showstringspaces=false,         		% Real spaces instead of an _ looking thing
+	showtabs=false,                 		% Shows real tabs
+	frame=single,                   		% Frame around the code
+	rulecolor=\color{black},        		% Sets the color of the frame, instedad of changing when linebreak
+	tabsize=2,                      		% Tabsize
+	captionpos=b,                   		% Caption position to bottom
+	breaklines=true,                		% Automatic line breaking
+	breakatwhitespace=false,        		% Automatic breaks should only happen at whitespace
+	title=\lstname,                  		% show the filename of files included with lstinputlisting;
+                                  			% also try caption instead of title
+}

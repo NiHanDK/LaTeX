@@ -1,0 +1,12 @@
+\definecolor{CSharpComment}{HTML}{008000}
+\definecolor{CSharpString}{HTML}{A31515}
+\definecolor{CSharpKeyword}{HTML}{0000FF}
+
+\lstdefinestyle{CSharp}{
+	language = [Sharp]{C},
+	style = defaultLayout,
+	keywordstyle=\color{CSharpKeyword}, % Keyword style
+	commentstyle=\color{CSharpComment}, % Comment style
+	stringstyle=\color{CSharpString},   % String literal style
+	escapeinside={\%*}{*)}            	% LaTeX inside listing
+}

@@ -1,0 +1,18 @@
+\definecolor{SQLMSSQLIdentifierstyle}{HTML}{008080}
+\definecolor{SQLMSSQLComment}{HTML}{008000}
+\definecolor{SQLMSSQLString}{HTML}{FF0000}
+\definecolor{SQLMSSQLKeyword}{HTML}{0000FF}
+
+\lstdefinelanguage[MSSQL]{SQL}[]{SQL} {
+	morekeywords={FOR, BEGIN, GO, PROCEDURE, DATABASE, CLUSTERED, REFERENCES, CASCADE, DECLARE, IF, CURSOR, OPEN, FETCH, WHILE, CLOSE, @@FETCH_STATUS, AS, ISNULL, INSTEAD, OF, DATABASE, REFERENCES, CASCADE, CLUSTERED, USE}
+}
+
+\lstdefinestyle{MSSQL}{
+	language = [MSSQL]{SQL},
+	style = defaultLayout,
+    identifierstyle=\color{SQLMSSQLIdentifierstyle},
+	keywordstyle=\color{SQLMSSQLKeyword},          		% Keyword style
+	commentstyle=\color{SQLMSSQLComment},       		% Comment style
+	stringstyle=\color{SQLMSSQLString},         		% String literal style
+	escapeinside={\%*}{*)}            					% LaTeX inside listing
+}
