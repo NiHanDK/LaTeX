@@ -1,0 +1,12 @@
+\definecolor{JavaComment}{HTML}{3F7F7D}
+\definecolor{JavaString}{HTML}{2A00FF}
+\definecolor{JavaKeyword}{HTML}{7F0055}
+
+\lstdefinestyle{Java}{
+	language = {Java},
+	style = defaultLayout,
+	keywordstyle=\color{JavaKeyword}, % Keyword style
+	commentstyle=\color{JavaComment}, % Comment style
+	stringstyle=\color{JavaString},   % String literal style
+	escapeinside={\%*}{*)}            	% LaTeX inside listing
+}
