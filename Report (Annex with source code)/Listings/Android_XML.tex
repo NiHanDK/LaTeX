@@ -1,0 +1,21 @@
+\definecolor{AndroidXMLIdentifierstyle}{HTML}{3F7F7F}
+\definecolor{AndroidXMLComment}{HTML}{645FCA}
+\definecolor{AndroidXMLString}{HTML}{2A00FF}
+\definecolor{AndroidXMLKeyword}{HTML}{7F007F}
+
+\lstdefinelanguage[Android]{XML}[]{XML} {
+	morekeywords={xmlns:android, xmlns:tools, android:id, android:layout_width, android:layout_height, android:orientation, tools:context, android:iconifiedByDefault, android:listSelector}
+}
+
+\lstdefinestyle{AndroidXML}{
+	language = [Android]{XML},
+	style = defaultLayout,
+	tagstyle=\color{AndroidXMLIdentifierstyle},
+	keywordstyle=\color{AndroidXMLKeyword}, % Keyword style
+	commentstyle=\color{AndroidXMLComment}, % Comment style
+	stringstyle=\color{AndroidXMLString},   % String literal style
+	escapeinside={\%*}{*)},            	% LaTeX inside listing
+	morecomment=[s]{<?}{?>},
+	morecomment=[s]{<!--}{-->}
+	%morecomment=[s][\color{orange}]{<!--}{-->}
+}
